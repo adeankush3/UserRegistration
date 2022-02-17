@@ -14,6 +14,7 @@ namespace UserRegistrationRE
             UserRegistration userRegistration = new UserRegistration();
             userRegistration.FirstName();
             userRegistration.LastName();
+            userRegistration.Email();
         }
     }
 }

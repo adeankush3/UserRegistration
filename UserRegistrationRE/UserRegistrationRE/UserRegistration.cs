@@ -42,5 +42,20 @@ namespace UserRegistrationRE
                 Console.WriteLine("Enter Valid Last Name");
             }
         }
+        public void Email()
+        {
+            Regex Email1 = new Regex("^([a-zA-Z0-9.]{3,})?[@][a-zA-Z]{5,}[.][a-zA-Z]{2,3}?$");//Abc@Yahoo.com
+            
+            Console.WriteLine("Enter Email id :");
+            string email = Console.ReadLine();
+            if (Email1.IsMatch(email))
+            {
+                Console.WriteLine("Your Email id is :" + email);
+            }
+            else
+            {
+                Console.WriteLine("please enter valid Email-ID");
+            }
+        }
     }
 }
