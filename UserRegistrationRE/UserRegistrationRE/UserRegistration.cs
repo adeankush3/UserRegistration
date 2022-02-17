@@ -73,5 +73,21 @@ namespace UserRegistrationRE
                 Console.WriteLine("please enter valid Mobile Number:");
             }
         }
+        public void Password()
+        {
+            Regex PSW = new Regex("^[A-Za-z0-9]{8,}$");
+
+            Console.WriteLine("Enter Your password :");
+            string password = Console.ReadLine();
+
+            if (PSW.IsMatch(password))
+            {
+                Console.WriteLine("Your password is :" + password);
+            }
+            else
+            {
+                Console.WriteLine("please enter valid password");
+            }
+        }
     }
 }

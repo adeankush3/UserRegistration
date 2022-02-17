@@ -16,6 +16,7 @@ namespace UserRegistrationRE
             userRegistration.LastName();
             userRegistration.Email();
             userRegistration.MobileNumber();
+            userRegistration.Password();
         }
     }
 }
