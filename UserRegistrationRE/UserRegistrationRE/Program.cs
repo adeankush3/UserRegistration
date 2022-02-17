@@ -11,6 +11,8 @@ namespace UserRegistrationRE
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To USER Registration Program. ");
+            UserRegistration userRegistration = new UserRegistration();
+            userRegistration.FirstName();
         }
     }
 }
