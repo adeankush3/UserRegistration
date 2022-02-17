@@ -11,17 +11,35 @@ namespace UserRegistrationRE
     {
         public void FirstName()
         {
-            Regex FirstName = new Regex("^[A-Z]{1}[a-z]{3,14}$");
+            Regex FirstName = new Regex("^[A-Z]{1}[a-z]{2,20}$");
 
-            System.Console.WriteLine("Enter Your First Name is:-");
+            Console.WriteLine("Enter Your First Name is:-");
             string firstname = Console.ReadLine();
+           
             if (FirstName.IsMatch(firstname))
             {
-                System.Console.WriteLine("Your Name is :" + firstname);
+                Console.WriteLine("Your Name is :" + firstname);
             }
             else
             {
-                System.Console.WriteLine("Enter Valid Name");
+                Console.WriteLine("Enter Valid Name");
+            }
+        }
+        
+        public void LastName()
+        {
+            Regex LastName = new Regex("^[A-Z]{1}[a-z]{2,20}$");
+
+            Console.WriteLine("Enter Last Name :");
+            string lastname = Console.ReadLine();
+            
+            if (LastName.IsMatch(lastname))
+            {
+                Console.WriteLine("Your last Name is :" + lastname);
+            }
+            else
+            {
+                Console.WriteLine("Enter Valid Last Name");
             }
         }
     }

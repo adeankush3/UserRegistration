@@ -13,6 +13,7 @@ namespace UserRegistrationRE
             Console.WriteLine("Welcome To USER Registration Program. ");
             UserRegistration userRegistration = new UserRegistration();
             userRegistration.FirstName();
+            userRegistration.LastName();
         }
     }
 }
