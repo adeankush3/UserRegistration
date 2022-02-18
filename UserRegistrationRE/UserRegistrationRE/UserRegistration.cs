@@ -75,9 +75,9 @@ namespace UserRegistrationRE
         }
         public void Password()
         {
-            Regex PSW = new Regex("^(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9]{8,}$");
+            Regex PSW = new Regex("^(?=[a-zA-Z0-9#@$?]{8,}$)(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9]).*");
             // Special Charcter
-            // (.*\W.*)[-+_!@#$%^&*.,?]
+            
 
             Console.WriteLine("Enter Your password :");
             string password = Console.ReadLine();
